@@ -57,8 +57,8 @@ Visualization Manager:
       Autocompute Intensity Bounds: false
       Class: grid_map_rviz_plugin/GridMap
       Color: 200; 200; 200
-      Color Layer: rgb
-      Color Transformer: ColorLayer
+      Color Layer: traversability
+      Color Transformer: IntensityLayer
       ColorMap: default
       Enabled: true
       Grid Cell Decimation: 1
@@ -66,9 +66,9 @@ Visualization Manager:
       Height Layer: elevation
       Height Transformer: ""
       History Length: 1
-      Invert ColorMap: false
+      Invert ColorMap: true
       Max Color: 238; 238; 236
-      Max Intensity: 1
+      Max Intensity: 1.2
       Min Color: 32; 74; 135
       Min Intensity: 0
       Name: ElevationMapRaw
@@ -77,7 +77,7 @@ Visualization Manager:
       Unreliable: false
       Use ColorMap: true
       Value: true
-    - Alpha: 0.10000000149011612
+    - Alpha: 0.5
       Autocompute Intensity Bounds: true
       Class: grid_map_rviz_plugin/GridMap
       Color: 200; 200; 200
@@ -87,7 +87,7 @@ Visualization Manager:
       Enabled: true
       Grid Cell Decimation: 1
       Grid Line Thickness: 0.10000000149011612
-      Height Layer: min_filter
+      Height Layer: elevation
       Height Transformer: GridMapLayer
       History Length: 1
       Invert ColorMap: false
